@@ -76,10 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
 }
 
-hr {
-  border-bottom: 1px solid #D9D9D9;
-}
-
 html {
   max-width: 1440px;
   margin: 0 auto;
@@ -89,18 +85,15 @@ html {
   display: flex;
   align-items: center;
 }
-
 .header__logo {
   padding: 8px;
 }
-
-.header-list {
+.header__list {
   display: flex;
   gap: 16px;
   margin-left: 94px;
 }
-
-.header-item {
+.header__item {
   display: flex;
   align-items: flex-end;
   gap: 4px;
@@ -110,34 +103,30 @@ html {
   font-weight: 500;
   line-height: 20px;
 }
-
 .header__buttons {
   display: flex;
   gap: 16px;
   margin-left: auto;
 }
-
 .header__button {
+  padding: 10px 16px;
   color: var(--neutral-900, #111827);
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
   border-radius: 8px;
   background: none;
-  padding: 10px 16px;
 }
 
 .hero__content {
   display: flex;
   justify-content: space-between;
 }
-
-.hero-left {
+.hero__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 120px;
-  max-width: 624px;
 }
 
 .hero__title {
@@ -159,7 +148,7 @@ html {
   right: 20px;
 }
 .hero__title_highlight {
-  color: #FFB637;
+  color: #ffb637;
 }
 
 .hero__description {
@@ -180,20 +169,20 @@ html {
 .hero__button {
   padding: 16px 24px;
   border-radius: 8px;
-  border: 1.5px solid #5EC3C5;
+  border: 1.5px solid #5ec3c5;
   background: rgba(94, 195, 197, 0.08);
-  color: #5EC3C5;
+  color: #5ec3c5;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 
 .button {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  background: #5EC3C5;
+  background: #5ec3c5;
 }
 
 .hero__info {
@@ -209,15 +198,15 @@ html {
   opacity: 0.2399999946;
 }
 
-.hero-bottom {
+.companies {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
-.hero-bottom__title {
+.companies__title {
+  text-align: center;
   padding-bottom: 12px;
   color: #333;
   font-size: 24px;
@@ -225,31 +214,28 @@ html {
   line-height: 32px;
   text-transform: uppercase;
 }
-
-.hero-bottom__description {
+.companies__description {
   padding-bottom: 40px;
   color: var(--neutral-700, #374151);
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.18px;
 }
-
-.hero-bottom__logos {
+.companies__logos {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
 section {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .impactful {
-  background: #BFE7E8;
+  background: #bfe7e8;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 .impactful__title {
   padding-bottom: 20px;
   color: #333;
@@ -259,7 +245,6 @@ section {
   line-height: 60px;
   letter-spacing: -0.48px;
 }
-
 .impactful__description {
   padding-bottom: 80px;
   color: var(--neutral-700, #374151);
@@ -268,8 +253,7 @@ section {
   line-height: 28px;
   letter-spacing: 0.18px;
 }
-
-.impactful-list {
+.impactful__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -281,82 +265,80 @@ section {
   margin-bottom: 80px;
   max-width: 384px;
 }
-
 .impactful-item__image {
   width: 72px;
   height: 72px;
   margin-bottom: 20px;
 }
-
 .impactful-item__title {
+  flex-grow: 1;
   color: #333;
   font-size: 30px;
   font-weight: 800;
   line-height: 34px;
   letter-spacing: -0.3px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-
 .impactful-item__description {
+  flex-grow: 1;
   color: var(--neutral-700, #374151);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.16px;
+  margin-bottom: 20px;
 }
 
 .mobile {
-  background: #ED8054;
+  background: #ed8054;
 }
-
 .mobile__content {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-.mobile__left {
-  max-width: 584px;
-  margin-top: 80px;
+.mobile__wrapper {
+  max-width: 594px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
 .mobile__title {
-  color: #FFF;
+  color: #fff;
   font-size: 48px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: -0.48px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
-
 .mobile__description {
   color: #101010;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.18px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
-
-.mobile__qr-code {
+.mobile__qr {
   display: flex;
-  align-items: center;
   gap: 40px;
-  max-width: 362px;
-  color: #FFF;
+}
+.mobile span {
+  color: #fff;
   font-size: 30px;
   font-weight: 900;
   line-height: 40px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
-}
-.mobile__qr-code span {
-  opacity: 0.7;
+  opacity: 0.5;
+  width: 200px;
 }
 
 .power {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.power__content {
+  overflow: hidden;
+}
 .power__title {
   color: #333;
   text-align: center;
@@ -367,13 +349,38 @@ section {
   margin-bottom: 80px;
 }
 .power__title span {
-  color: #B50700;
+  color: #b50700;
 }
-
-.power-list {
+.power__list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 72px;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: translateX(0px);
+}
+.power__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.power__button {
+  display: flex;
+  padding: 13px;
+  border-radius: 56px;
+  border: 1.5px solid #5ec3c5;
+  background: rgba(94, 195, 197, 0.08);
+}
+.power__button_radio {
+  font-size: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  opacity: 0.75;
+  background: #D9D9D9;
+}
+.power__button svg {
+  fill: #5ec3c5;
 }
 
 .power-item {
@@ -381,23 +388,22 @@ section {
   flex-direction: column;
   justify-content: space-between;
   max-width: 384px;
+  margin-bottom: 80px;
 }
-
 .power-item__image {
   margin-bottom: 24px;
   width: 384px;
   height: 245px;
   border-radius: 8px;
 }
-
 .power-item__title {
+  flex-grow: 1;
   color: #111827;
   font-size: 24px;
   font-weight: 800;
   line-height: 32px;
   margin-bottom: 16px;
 }
-
 .power-item__description {
   color: var(--neutral-700, #374151);
   font-size: 16px;
@@ -406,10 +412,9 @@ section {
   letter-spacing: 0.16px;
   margin-bottom: 24px;
 }
-
 .power-item__button {
   padding: 10px 16px;
-  color: #FFF;
+  color: #fff;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
